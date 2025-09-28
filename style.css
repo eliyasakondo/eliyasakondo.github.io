@@ -1,0 +1,201 @@
+body {
+    font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5fafd 0%, #e3f2fd 100%);
+    color: #222;
+    min-height: 100vh;
+}
+
+/* Modern header */
+.modern-header {
+    position: relative;
+    padding: 0 0 2rem 0;
+    text-align: center;
+    overflow: hidden;
+}
+.header-bg {
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 220px;
+    background: linear-gradient(120deg, #00bcd4 0%, #2196f3 100%);
+    z-index: 0;
+    border-bottom-left-radius: 60px 30px;
+    border-bottom-right-radius: 60px 30px;
+}
+.profile-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+.modern-profile-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 24px rgba(33,150,243,0.18);
+    margin-bottom: 1rem;
+    background: #fff;
+}
+.profile-info h1 {
+    margin: 0;
+    font-size: 2.3rem;
+    color: #fff;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.tagline {
+    color: #e3f2fd;
+    font-size: 1.1rem;
+    margin: 0.3rem 0 0.7rem 0;
+    font-weight: 500;
+}
+.contact-links {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+.contact-links a {
+    font-size: 1.5rem;
+    color: #fff;
+    background: #00bcd4;
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,188,212,0.10);
+    transition: background 0.2s, transform 0.2s;
+}
+.contact-links a:hover {
+    background: #2196f3;
+    transform: scale(1.1);
+}
+
+main {
+    max-width: 900px;
+    margin: 2.5rem auto 0 auto;
+    padding: 0 1.5rem 2rem 1.5rem;
+}
+
+section {
+    margin-bottom: 2.5rem;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(33,150,243,0.07);
+    padding: 2.2rem 2rem;
+    transition: box-shadow 0.3s;
+}
+section:hover {
+    box-shadow: 0 8px 32px rgba(33,150,243,0.13);
+}
+
+.section-title {
+    color: #2196f3;
+    margin-top: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+h2 {
+    color: #00bcd4;
+    margin-top: 0;
+}
+
+/* Project cards */
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.project-card {
+    background: linear-gradient(120deg, #e3f2fd 60%, #fff 100%);
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(33,150,243,0.08);
+    width: 320px;
+    min-height: 180px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.2s, transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.project-card:hover {
+    box-shadow: 0 8px 32px rgba(33,150,243,0.18);
+    transform: translateY(-6px) scale(1.03);
+}
+.project-card-bg {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(circle at 80% 20%, #00bcd4 0%, transparent 70%);
+    opacity: 0.13;
+    z-index: 0;
+}
+.project-card-content {
+    position: relative;
+    z-index: 1;
+    padding: 1.2rem 1.2rem 1.5rem 1.2rem;
+}
+.project-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: #2196f3;
+    font-size: 1.2rem;
+}
+.project-card p {
+    margin: 0 0 0.7rem 0;
+    color: #333;
+    font-size: 1rem;
+}
+.project-link {
+    color: #00bcd4;
+    font-weight: 600;
+    font-size: 0.98rem;
+    text-decoration: underline;
+    letter-spacing: 0.5px;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    background: none;
+    color: #222;
+    font-size: 1rem;
+}
+.footer-note {
+    color: #888;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 0 0.5rem 2rem 0.5rem;
+    }
+    section {
+        padding: 1rem;
+    }
+    .project-cards {
+        gap: 1rem;
+    }
+    .project-card {
+        width: 100%;
+        min-width: unset;
+    }
+    .modern-header {
+        padding-bottom: 1.2rem;
+    }
+    .profile-info h1 {
+        font-size: 1.3rem;
+    }
+}
+
