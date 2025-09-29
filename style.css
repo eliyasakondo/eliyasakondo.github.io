@@ -10,67 +10,288 @@ body {
 /* Modern header */
 .modern-header {
     position: relative;
-    padding: 0 0 2rem 0;
-    text-align: center;
+    padding: 0;
     overflow: hidden;
+    min-height: 500px;
 }
+
 .header-bg {
     position: absolute;
-    top: 0; left: 0; right: 0; height: 220px;
-    background: linear-gradient(120deg, #00bcd4 0%, #2196f3 100%);
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     z-index: 0;
-    border-bottom-left-radius: 60px 30px;
-    border-bottom-right-radius: 60px 30px;
 }
-.profile-container {
+
+.animated-bg {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(45deg, rgba(0,188,212,0.1) 0%, rgba(33,150,243,0.1) 100%);
+    animation: gradientShift 8s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+    0%, 100% { background: linear-gradient(45deg, rgba(0,188,212,0.1) 0%, rgba(33,150,243,0.1) 100%); }
+    50% { background: linear-gradient(225deg, rgba(33,150,243,0.1) 0%, rgba(0,188,212,0.1) 100%); }
+}
+
+.header-content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-top: 2.5rem;
+    min-height: 450px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    gap: 3rem;
 }
-.modern-profile-img {
-    width: 140px;
-    height: 140px;
+
+.profile-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img-container {
+    position: relative;
+    width: 280px;
+    height: 280px;
+}
+
+.profile-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(45deg, rgba(0,188,212,0.8), rgba(33,150,243,0.6));
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0.3;
+    transition: opacity 0.3s;
+}
+
+.profile-img-container:hover .profile-overlay {
+    opacity: 0.1;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid #fff;
-    box-shadow: 0 4px 24px rgba(33,150,243,0.18);
-    margin-bottom: 1rem;
-    background: #fff;
+    border: 6px solid rgba(255,255,255,0.3);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
-.profile-info h1 {
-    margin: 0;
-    font-size: 2.3rem;
+
+.profile-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 48px rgba(0,0,0,0.4);
+}
+
+.content-side {
+    flex: 1.2;
     color: #fff;
-    letter-spacing: 1px;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
+
+.content-side h1 {
+    margin: 0;
+    font-size: 3.2rem;
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
 .tagline {
-    color: #e3f2fd;
-    font-size: 1.1rem;
-    margin: 0.3rem 0 0.7rem 0;
-    font-weight: 500;
+    color: rgba(255,255,255,0.9);
+    font-size: 1.3rem;
+    margin: 1rem 0 2rem 0;
+    font-weight: 400;
+    line-height: 1.4;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
+
 .contact-links {
     display: flex;
-    gap: 1.2rem;
-    justify-content: center;
-    margin-top: 0.5rem;
+    gap: 1.5rem;
+    margin-top: 2rem;
 }
+
 .contact-links a {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #fff;
-    background: #00bcd4;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
     border-radius: 50%;
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 3rem;
+    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 8px rgba(0,188,212,0.10);
-    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.contact-links a:hover {
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+}
+
+/* Tech icons animations */
+.tech-icons {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.tech-icons i {
+    position: absolute;
+    color: rgba(255,255,255,0.1);
+    font-size: 2.5rem;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.tech-icons .fa-react { top: 10%; left: 10%; }
+.tech-icons .fa-js-square { top: 20%; right: 15%; }
+.tech-icons .fa-php { top: 60%; left: 5%; }
+.tech-icons .fa-python { bottom: 20%; right: 10%; }
+.tech-icons .fa-laravel { top: 40%; right: 5%; }
+.tech-icons .fa-database { bottom: 10%; left: 15%; }
+.tech-icons .fa-git-alt { top: 15%; left: 40%; }
+.tech-icons .fa-html5 { bottom: 15%; right: 40%; }
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(5deg); }
+}
+
+@keyframes wobble {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+}
+
+@keyframes swing {
+    0%, 100% { transform: rotate(0deg); }
+    20% { transform: rotate(15deg); }
+    40% { transform: rotate(-10deg); }
+    60% { transform: rotate(5deg); }
+    80% { transform: rotate(-5deg); }
+}
+
+@keyframes bounce-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.bounce { animation-name: bounce; }
+.pulse { animation-name: pulse; }
+.shake { animation-name: shake; }
+.rotate { animation-name: rotate; animation-duration: 5s; }
+.float { animation-name: float; animation-duration: 4s; }
+.wobble { animation-name: wobble; }
+.swing { animation-name: swing; }
+.bounce-slow { animation-name: bounce-slow; animation-duration: 6s; }
+
+/* Header curve */
+.header-curve {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 3;
+}
+
+.header-curve svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+
+.header-curve svg path {
+    animation: wave 8s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.content-side {
+    flex: 1.2;
+    color: #fff;
+}
+
+.content-side h1 {
+    margin: 0;
+    font-size: 3.2rem;
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.tagline {
+    color: rgba(255,255,255,0.9);
+    font-size: 1.3rem;
+    margin: 1rem 0 2rem 0;
+    font-weight: 400;
+    line-height: 1.4;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.contact-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.contact-links a {
+    font-size: 1.6rem;
+    color: #fff;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    transition: all 0.3s;
 }
 /* Stats section */
 .stats {
@@ -327,10 +548,23 @@ footer {
         min-width: unset;
     }
     .modern-header {
-        padding-bottom: 1.2rem;
+        min-height: 600px;
     }
-    .profile-info h1 {
-        font-size: 1.8rem;
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        padding: 1rem;
+    }
+    .profile-img-container {
+        width: 200px;
+        height: 200px;
+    }
+    .content-side h1 {
+        font-size: 2.2rem;
+    }
+    .tagline {
+        font-size: 1.1rem;
     }
     .stats {
         gap: 1rem;
@@ -347,6 +581,9 @@ footer {
     }
     .timeline-item {
         padding-left: 1.5rem;
+    }
+    .tech-icons i {
+        font-size: 1.8rem;
     }
 }
 
