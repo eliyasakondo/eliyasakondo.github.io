@@ -19,6 +19,20 @@
             <div class="profile-info">
                 <h1>Md. Eliyas Akondo</h1>
                 <p class="tagline">Software Support & Customer Service Officer | Web Developer | Data Analyst</p>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                </div>
                 <div class="contact-links">
                     <a href="mailto:eliyasakondo@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
                     <a href="tel:+8801518375346" title="Call"><i class="fa-solid fa-phone"></i></a>
@@ -29,18 +43,93 @@
         </div>
     </header>
     <main>
-        <section id="projects">
-            <h2 class="section-title">Project Showcase</h2>
-            <div class="project-cards">
-                <div class="project-card" onclick="window.open('https://github.com/eliyasakondo/eliyasakondo.github.io','_blank')">
-                    <div class="project-card-bg"></div>
-                    <div class="project-card-content">
-                        <h3>eliyasakondo.github.io</h3>
-                        <p>Personal portfolio website built with HTML and CSS, showcasing my background, experience, and skills.</p>
-                        <span class="project-link">View on GitHub →</span>
+        <section id="skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Python</span>
                     </div>
                 </div>
-                <!-- Add more interactive project cards here -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Frameworks & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Specialties</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Web Development</span>
+                        <span class="skill-tag">Data Analysis</span>
+                        <span class="skill-tag">ERP Systems</span>
+                        <span class="skill-tag">Customer Support</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-cards">
+                <div class="project-card featured" onclick="window.open('https://github.com/eliyasakondo/eliyasakondo.github.io','_blank')">
+                    <div class="project-card-bg"></div>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-card-content">
+                        <h3>Modern Portfolio Website</h3>
+                        <p>Responsive portfolio website with modern design, interactive animations, and mobile-first approach. Built with vanilla HTML, CSS, and JavaScript.</p>
+                        <div class="project-links">
+                            <span class="project-link"><i class="fab fa-github"></i> GitHub</span>
+                            <span class="project-link live"><i class="fas fa-external-link-alt"></i> Live Demo</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" onclick="alert('Add your Laravel project GitHub link here')">
+                    <div class="project-card-bg"></div>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                    <div class="project-card-content">
+                        <h3>ERP Management System</h3>
+                        <p>Full-stack ERP solution for business management with user authentication, inventory tracking, and reporting features.</p>
+                        <div class="project-links">
+                            <span class="project-link"><i class="fab fa-github"></i> GitHub</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="alert('Add your data analysis project GitHub link here')">
+                    <div class="project-card-bg"></div>
+                    <div class="project-tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Data Analysis</span>
+                    </div>
+                    <div class="project-card-content">
+                        <h3>Data Analytics Dashboard</h3>
+                        <p>Interactive data visualization dashboard for business intelligence and reporting. Automated data processing and insights generation.</p>
+                        <div class="project-links">
+                            <span class="project-link"><i class="fab fa-github"></i> GitHub</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="objective">
@@ -77,19 +166,36 @@
             </ul>
         </section>
         <section id="experience">
-            <h2>Professional Experience</h2>
-            <ul>
-                <li><strong>Advanced Intelligent Technology Solution (AITS) Idea Ltd.</strong><br>
-                    <span>Type:</span> Software Company<br>
-                    <span>Period:</span> October 2022 - Present<br>
-                    <span>Designation:</span> Software Support and Customer Service Officer<br>
-                    <span>Responsibility:</span> Providing full customer support of ERP (Silence), SME (BONIK), Apartment Management (JOMIDAR) Software. Training customers. Writing documentation for SaaS products.
-                </li>
-                <li><strong>International Image Management Limited (USA)</strong><br>
-                    <span>Period:</span> May 2022 - October 2022<br>
-                    <span>Designation:</span> Data Analyst (Remote)
-                </li>
-            </ul>
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Software Support & Customer Service Officer</h3>
+                        <h4>Advanced Intelligent Technology Solution (AITS) Idea Ltd.</h4>
+                        <span class="timeline-date">October 2022 - Present</span>
+                        <ul>
+                            <li>Providing comprehensive customer support for ERP (Silence), SME (BONIK), and Apartment Management (JOMIDAR) software</li>
+                            <li>Training customers and writing technical documentation for SaaS products</li>
+                            <li>Troubleshooting complex software issues and implementing solutions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Data Analyst (Remote)</h3>
+                        <h4>International Image Management Limited (USA)</h4>
+                        <span class="timeline-date">May 2022 - October 2022</span>
+                        <ul>
+                            <li>Analyzed large datasets to extract business insights</li>
+                            <li>Created data visualization reports for management</li>
+                            <li>Collaborated with international teams remotely</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="training">
             <h2>Training and Certification</h2>

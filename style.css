@@ -72,9 +72,144 @@ body {
     box-shadow: 0 2px 8px rgba(0,188,212,0.10);
     transition: background 0.2s, transform 0.2s;
 }
-.contact-links a:hover {
-    background: #2196f3;
-    transform: scale(1.1);
+/* Stats section */
+.stats {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+.stat {
+    text-align: center;
+    color: #fff;
+}
+.stat-number {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #e3f2fd;
+}
+.stat-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Skills section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.skill-category h3 {
+    color: #2196f3;
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+.skill-tag {
+    background: linear-gradient(135deg, #00bcd4, #2196f3);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(33,150,243,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.skill-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(33,150,243,0.3);
+}
+
+/* Timeline styles */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0.75rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #00bcd4, #2196f3);
+}
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+}
+.timeline-marker {
+    position: absolute;
+    left: -2.25rem;
+    top: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    background: #00bcd4;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #fff, 0 0 0 6px #00bcd4;
+}
+.timeline-content h3 {
+    color: #2196f3;
+    margin: 0 0 0.3rem 0;
+    font-size: 1.3rem;
+}
+.timeline-content h4 {
+    color: #666;
+    margin: 0 0 0.5rem 0;
+    font-weight: 500;
+}
+.timeline-date {
+    color: #00bcd4;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.timeline-content ul {
+    margin: 1rem 0 0 0;
+    padding-left: 1.2rem;
+}
+.timeline-content li {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+/* Enhanced project cards */
+.project-card.featured {
+    border: 2px solid #00bcd4;
+    transform: scale(1.02);
+}
+.project-tech-stack {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.3rem;
+    z-index: 2;
+}
+.tech-tag {
+    background: rgba(0,188,212,0.9);
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-weight: 500;
+}
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+.project-link.live {
+    color: #4caf50;
 }
 
 main {
@@ -195,7 +330,23 @@ footer {
         padding-bottom: 1.2rem;
     }
     .profile-info h1 {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
+    }
+    .stats {
+        gap: 1rem;
+    }
+    .stat-number {
+        font-size: 1.4rem;
+    }
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .timeline {
+        padding-left: 1rem;
+    }
+    .timeline-item {
+        padding-left: 1.5rem;
     }
 }
 
