@@ -5,289 +5,356 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Md. Eliyas Akondo | Modern Portfolio</title>
         <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-papm6Q+ua1QwQw1QwQw1QwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-papm6Q+ua1QwQw1QwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQwQw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script defer src="script.js"></script>
     </head>
 <body>
-    <header class="modern-header">
-        <div class="header-bg">
-            <div class="animated-bg"></div>
-            <div class="tech-icons floating">
-                <i class="fab fa-react bounce"></i>
-                <i class="fab fa-js-square pulse"></i>
-                <i class="fab fa-php shake"></i>
-                <i class="fab fa-python rotate"></i>
-                <i class="fab fa-laravel float"></i>
-                <i class="fas fa-database wobble"></i>
-                <i class="fab fa-git-alt swing"></i>
-                <i class="fab fa-html5 bounce-slow"></i>
-            </div>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-brand">
+            <span>EA</span>
         </div>
-        <div class="header-content">
-            <div class="profile-side">
-                <div class="profile-img-container">
-                    <div class="profile-overlay"></div>
-                    <img src="https://avatars.githubusercontent.com/u/21355249?v=4" alt="Md. Eliyas Akondo" class="profile-img">
-                </div>
-            </div>
-            <div class="content-side">
-                <h1>Md. Eliyas Akondo</h1>
-                <p class="tagline">Software Support & Customer Service Officer | Web Developer | Data Analyst</p>
-                <div class="stats">
-                    <div class="stat">
-                        <span class="stat-number">3+</span>
-                        <span class="stat-label">Years Experience</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">50+</span>
-                        <span class="stat-label">Projects Completed</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">100+</span>
-                        <span class="stat-label">Happy Clients</span>
-                    </div>
-                </div>
-                <div class="contact-links">
-                    <a href="mailto:eliyasakondo@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="tel:+8801518375346" title="Call"><i class="fa-solid fa-phone"></i></a>
-                    <a href="https://www.linkedin.com/in/eliyasakondo/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#projects" title="Projects"><i class="fa-solid fa-briefcase"></i></a>
-                </div>
-            </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div class="header-curve">
-            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M0,0V46.29C32.07,60.32,77.58,80,150,80s117.93-19.68,150-33.71S377.58,16.29,450,16.29s117.93,19.68,150,33.71S677.58,80,750,80s117.93-19.68,150-33.71S977.58,16.29,1050,16.29s117.93,19.68,150,33.71V120H0V0Z" fill="#f5fafd"></path>
-            </svg>
-        </div>
-    </header>
-    <main>
-        <section id="skills">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">Python</span>
+    </nav>
+
+    <!-- Page Container -->
+    <div class="page-container">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="home-content">
+                <div class="profile-side">
+                    <div class="profile-img-container">
+                        <div class="profile-overlay"></div>
+                        <img src="https://avatars.githubusercontent.com/u/21355249?v=4" alt="Md. Eliyas Akondo" class="profile-img">
+                        <div class="tech-icons floating">
+                            <i class="fab fa-react bounce"></i>
+                            <i class="fab fa-js-square pulse"></i>
+                            <i class="fab fa-php shake"></i>
+                            <i class="fab fa-python rotate"></i>
+                            <i class="fab fa-laravel float"></i>
+                            <i class="fas fa-database wobble"></i>
+                            <i class="fab fa-git-alt swing"></i>
+                            <i class="fab fa-html5 bounce-slow"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Frameworks & Tools</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Laravel</span>
-                        <span class="skill-tag">Bootstrap</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">VS Code</span>
-                        <span class="skill-tag">MySQL</span>
+                <div class="content-side">
+                    <h1>Hello, I'm <span class="highlight">Eliyas Akondo</span></h1>
+                    <p class="tagline">Software Support & Customer Service Officer | Web Developer | Data Analyst</p>
+                    <p class="description">I'm passionate about creating beautiful, functional digital experiences. With 3+ years of experience in software support, web development, and data analysis.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
                     </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Specialties</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Web Development</span>
-                        <span class="skill-tag">Data Analysis</span>
-                        <span class="skill-tag">ERP Systems</span>
-                        <span class="skill-tag">Customer Support</span>
+                    <div class="home-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                    </div>
+                    <div class="contact-links">
+                        <a href="mailto:eliyasakondo@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="tel:+8801518375346" title="Call"><i class="fa-solid fa-phone"></i></a>
+                        <a href="https://www.linkedin.com/in/eliyasakondo/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/eliyasakondo" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="project-cards">
-                <div class="project-card featured" onclick="window.open('https://github.com/eliyasakondo/eliyasakondo.github.io','_blank')">
-                    <div class="project-card-bg"></div>
-                    <div class="project-tech-stack">
-                        <span class="tech-tag">HTML5</span>
-                        <span class="tech-tag">CSS3</span>
-                        <span class="tech-tag">JavaScript</span>
-                    </div>
-                    <div class="project-card-content">
-                        <h3>Modern Portfolio Website</h3>
-                        <p>Responsive portfolio website with modern design, interactive animations, and mobile-first approach. Built with vanilla HTML, CSS, and JavaScript.</p>
-                        <div class="project-links">
-                            <span class="project-link"><i class="fab fa-github"></i> GitHub</span>
-                            <span class="project-link live"><i class="fas fa-external-link-alt"></i> Live Demo</span>
-                        </div>
-                    </div>
+        <!-- About Page -->
+        <section id="about" class="page">
+            <div class="page-content">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <p>Get to know me better</p>
                 </div>
-                
-                <div class="project-card" onclick="alert('Add your Laravel project GitHub link here')">
-                    <div class="project-card-bg"></div>
-                    <div class="project-tech-stack">
-                        <span class="tech-tag">Laravel</span>
-                        <span class="tech-tag">PHP</span>
-                        <span class="tech-tag">MySQL</span>
-                    </div>
-                    <div class="project-card-content">
-                        <h3>ERP Management System</h3>
-                        <p>Full-stack ERP solution for business management with user authentication, inventory tracking, and reporting features.</p>
-                        <div class="project-links">
-                            <span class="project-link"><i class="fab fa-github"></i> GitHub</span>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>Who Am I?</h3>
+                        <p>Willing to build up career in a challenging position and to prove myself as a quick learner and highly energetic person to face any challenge in the Computer sector where the contribution will be acknowledged, if would be given an opportunity.</p>
+                        
+                        <div class="personal-info">
+                            <div class="info-item">
+                                <strong>Location:</strong>
+                                <span>Dhaka, Bangladesh</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Languages:</strong>
+                                <span>English (CEFR – B2), Bengali (Native)</span>
+                            </div>
+                            <div class="info-item">
+                                <strong>Education:</strong>
+                                <span>BSc in Computer Science & Engineering (Pursuing)</span>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="project-card" onclick="alert('Add your data analysis project GitHub link here')">
-                    <div class="project-card-bg"></div>
-                    <div class="project-tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">Data Analysis</span>
+                        <div class="qualities">
+                            <div class="quality">
+                                <i class="fas fa-users"></i>
+                                <span>Team Player</span>
+                            </div>
+                            <div class="quality">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Problem Solver</span>
+                            </div>
+                            <div class="quality">
+                                <i class="fas fa-clock"></i>
+                                <span>Quick Learner</span>
+                            </div>
+                            <div class="quality">
+                                <i class="fas fa-comments"></i>
+                                <span>Good Communicator</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project-card-content">
-                        <h3>Data Analytics Dashboard</h3>
-                        <p>Interactive data visualization dashboard for business intelligence and reporting. Automated data processing and insights generation.</p>
-                        <div class="project-links">
-                            <span class="project-link"><i class="fab fa-github"></i> GitHub</span>
+                    <div class="about-image">
+                        <img src="https://avatars.githubusercontent.com/u/21355249?v=4" alt="About Me">
+                        <div class="about-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Page -->
+        <section id="skills" class="page">
+            <div class="page-content">
+                <div class="section-header">
+                    <h2>Technical Skills</h2>
+                    <p>Technologies I work with</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Python</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> Frameworks & Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Laravel</span>
+                            <span class="skill-tag">Bootstrap</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-database"></i> Specialties</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Web Development</span>
+                            <span class="skill-tag">Data Analysis</span>
+                            <span class="skill-tag">ERP Systems</span>
+                            <span class="skill-tag">Customer Support</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="objective">
-            <h2>Career Objectives</h2>
-            <p>Willing to build up career in a challenging position and to prove myself as a quick learner and highly energetic person to face any challenge in the Computer sector where the contribution will be acknowledged, if would be given an opportunity.</p>
-        </section>
-        <section id="education">
-            <h2>Educational Background</h2>
-            <ul>
-                <li><strong>Bachelor of Science in Computer Science and Engineering (Pursuing)</strong><br>
-                    <span>Name of the institution:</span> Bangladesh Open University<br>
-                    <span>Department:</span> Computer Science and Engineering<br>
-                    <span>Session:</span> 2019-2020<br>
-                    <span>Duration:</span> 4-Years<br>
-                    <span>Current Status:</span> 4th Year, (8th Semester)<br>
-                    <span>Result:</span> N/A (Pursuing)
-                </li>
-                <li><strong>Diploma-In-Engineering</strong><br>
-                    <span>Name of the institution:</span> Bogura Polytechnic Institute<br>
-                    <span>Department:</span> Computer Technology<br>
-                    <span>Session:</span> 2013-14<br>
-                    <span>Duration:</span> 4-Years<br>
-                    <span>Board:</span> Bangladesh Technical Education Board, Dhaka<br>
-                    <span>Result:</span> CGPA-3.23 (Out of 4.00)<br>
-                    <span>Passing Year:</span> 2017
-                </li>
-                <li><strong>Secondary School Certificate</strong><br>
-                    <span>Name of the institution:</span> Sayed Akbar Ali Memorial High School<br>
-                    <span>Group:</span> Science<br>
-                    <span>Board:</span> Bangladesh Education Board, Rajshahi<br>
-                    <span>G.P.A:</span> GPA-4.38 (Out Of 5.00)<br>
-                    <span>Passing year:</span> 2013
-                </li>
-            </ul>
-        </section>
-        <section id="experience">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Software Support & Customer Service Officer</h3>
-                        <h4>Advanced Intelligent Technology Solution (AITS) Idea Ltd.</h4>
-                        <span class="timeline-date">October 2022 - Present</span>
-                        <ul>
-                            <li>Providing comprehensive customer support for ERP (Silence), SME (BONIK), and Apartment Management (JOMIDAR) software</li>
-                            <li>Training customers and writing technical documentation for SaaS products</li>
-                            <li>Troubleshooting complex software issues and implementing solutions</li>
-                        </ul>
-                    </div>
+
+        <!-- Projects Page -->
+        <section id="projects" class="page">
+            <div class="page-content">
+                <div class="section-header">
+                    <h2>Featured Projects</h2>
+                    <p>Some of my recent work</p>
                 </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Data Analyst (Remote)</h3>
-                        <h4>International Image Management Limited (USA)</h4>
-                        <span class="timeline-date">May 2022 - October 2022</span>
-                        <ul>
-                            <li>Analyzed large datasets to extract business insights</li>
-                            <li>Created data visualization reports for management</li>
-                            <li>Collaborated with international teams remotely</li>
-                        </ul>
+                <div class="project-cards">
+                    <div class="project-card featured" onclick="window.open('https://github.com/eliyasakondo/eliyasakondo.github.io','_blank')">
+                        <div class="project-card-bg"></div>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-card-content">
+                            <h3>Modern Portfolio Website</h3>
+                            <p>Responsive portfolio website with modern design, interactive animations, and mobile-first approach. Built with vanilla HTML, CSS, and JavaScript.</p>
+                            <div class="project-links">
+                                <span class="project-link"><i class="fab fa-github"></i> GitHub</span>
+                                <span class="project-link live"><i class="fas fa-external-link-alt"></i> Live Demo</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-card-bg"></div>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="project-card-content">
+                            <h3>ERP Management System</h3>
+                            <p>Full-stack ERP solution for business management with user authentication, inventory tracking, and reporting features.</p>
+                            <div class="project-links">
+                                <span class="project-link"><i class="fab fa-github"></i> GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card-bg"></div>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Data Analysis</span>
+                        </div>
+                        <div class="project-card-content">
+                            <h3>Data Analytics Dashboard</h3>
+                            <p>Interactive data visualization dashboard for business intelligence and reporting. Automated data processing and insights generation.</p>
+                            <div class="project-links">
+                                <span class="project-link"><i class="fab fa-github"></i> GitHub</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="training">
-            <h2>Training and Certification</h2>
-            <ul>
-                <li><strong>Professional Web Application and Development (PWAD)</strong><br>
-                    <span>Organization:</span> Islamic Development Bank-Bangladesh Islamic Solidarity and Educational Wakf (IsDB-BISEW)<br>
-                    <span>Period:</span> October 2020 to March 2021<br>
-                    <span>Tools and Technologies:</span> HTML5, Bootstrap, JavaScript, SQL, Git, PHP, Laravel
-                </li>
-                <li><strong>Web Design and Development</strong><br>
-                    <span>Organization:</span> Bangladesh Computer Council (BCC)<br>
-                    <span>Period:</span> Jan-2019 to May 2019
-                </li>
-                <li><strong>Industrial Training Program/Attachment</strong><br>
-                    <span>Organization:</span> Smart Software an Advance Smart Technology<br>
-                    <span>Period:</span> August 2017 to October 2017<br>
-                    <span>Major area of Training:</span> Web Design and Development
-                </li>
-            </ul>
+
+        <!-- Experience Page -->
+        <section id="experience" class="page">
+            <div class="page-content">
+                <div class="section-header">
+                    <h2>Professional Experience</h2>
+                    <p>My career journey</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Software Support & Customer Service Officer</h3>
+                            <h4>Advanced Intelligent Technology Solution (AITS) Idea Ltd.</h4>
+                            <span class="timeline-date">October 2022 - Present</span>
+                            <ul>
+                                <li>Providing comprehensive customer support for ERP (Silence), SME (BONIK), and Apartment Management (JOMIDAR) software</li>
+                                <li>Training customers and writing technical documentation for SaaS products</li>
+                                <li>Troubleshooting complex software issues and implementing solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Data Analyst (Remote)</h3>
+                            <h4>International Image Management Limited (USA)</h4>
+                            <span class="timeline-date">May 2022 - October 2022</span>
+                            <ul>
+                                <li>Analyzed large datasets to extract business insights</li>
+                                <li>Created data visualization reports for management</li>
+                                <li>Collaborated with international teams remotely</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="languages">
-            <h2>Language Proficiency</h2>
-            <ul>
-                <li>English (CEFR – B2)</li>
-                <li>Bengali (Native)</li>
-            </ul>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page">
+            <div class="page-content">
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <p>Let's work together</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p><a href="mailto:eliyasakondo@gmail.com">eliyasakondo@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p><a href="tel:+8801518375346">+8801518375346</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Dhaka, Bangladesh</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/eliyasakondo/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/eliyasakondo" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="skills">
-            <h2>Relevant Skills</h2>
-            <ul>
-                <li>Capable of working in a team as well as independently.</li>
-                <li>Comfortable with working long hours in the lab as well as an organization.</li>
-                <li>Strong communication and interpersonal skills.</li>
-                <li>Good analytical and problem solving skills.</li>
-            </ul>
-        </section>
-        <section id="confidence">
-            <h2>Confidence</h2>
-            <blockquote>
-                “I am an enthusiastic, energetic, positive, dynamic, an outgoing pleasant personality and strong inter-personal skill with an ability to work at a high pace on one’s own initiative."
-            </blockquote>
-        </section>
-        <section id="references">
-            <h2>References</h2>
-            <ul>
-                <li>
-                    <strong>Syed Ziaul Habib</strong><br>
-                    Professional Tech Trainer and Web Programmer<br>
-                    The Computers Limited<br>
-                    Dhaka Metro Scout Bhaban(1st Fl),54 Inner Circular Road, Dhaka-1000, Bangladesh<br>
-                    Email: <a href="mailto:roobon@gmail.com">roobon@gmail.com</a>
-                </li>
-                <li>
-                    <strong>Md. Humayan Reza</strong><br>
-                    Junior Instructor, Computer Technology<br>
-                    Bogura Polytechnic Institute<br>
-                    Colony, Sherpur Road, Bogura-5800<br>
-                    Email: <a href="mailto:humayanreza@gmail.com">humayanreza@gmail.com</a><br>
-                    Cell: <a href="tel:+8801721815816">+8801721-815816</a>
-                </li>
-            </ul>
-        </section>
-        <section id="signature">
-            <h2>Signature</h2>
-            <p>Md. Eliyas Akondo<br>Date: 29-Sep-2025</p>
-        </section>
-    </main>
+    </div>
+
+    <!-- Page Navigation Dots -->
+    <div class="page-dots">
+        <span class="dot active" data-page="home"></span>
+        <span class="dot" data-page="about"></span>
+        <span class="dot" data-page="skills"></span>
+        <span class="dot" data-page="projects"></span>
+        <span class="dot" data-page="experience"></span>
+        <span class="dot" data-page="contact"></span>
+    </div>
+
     <footer>
         <p>&copy; 2025 Md. Eliyas Akondo. All rights reserved.</p>
-        <p class="footer-note">Designed with ❤️ for HR and recruiters. Last updated: 29-Sep-2025</p>
     </footer>
 </body>
 </html>
